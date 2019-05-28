@@ -1,9 +1,9 @@
-var count = 1;
+var count = 0;
 
 function takeANumber(line, name) {
-  line.push(name);
   // var num = line.length;
   count++;
+  line.push(name);
   return `You are ticket number ${count}.`;
 
 }
