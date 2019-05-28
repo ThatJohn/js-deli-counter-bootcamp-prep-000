@@ -1,12 +1,19 @@
+var count = 1;
+
 function takeANumber(line, name) {
   line.push(name);
-  var num = line.length;
-  return `Welcome, ${name}. You are number ${num} in line.`;
+  // var num = line.length;
+  return `You are ticket number ${count}.`;
+  count++;
 }
+
+// peter 1 -0-
+// sam   2 -1-
+// sarah 3 -2-
 
 function nowServing(line) {
   if(line.length >= 1) {
-    var sentence = `Currently serving ${line[0]}.`;
+    var sentence = `Currently serving ticket number ${count}.`;
     line.splice(0,1);
     return sentence;
   } else {
